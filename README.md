@@ -8,4 +8,4 @@ Curriculum Vitae
 
 Thanks to http://latex.aslushnikov.com/ for auto-generating my CV on demand.
 
-In case downloading the link does not work, please contact me by email.
+In case the link does not work, please contact me by email.
