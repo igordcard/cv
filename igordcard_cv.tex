@@ -42,11 +42,18 @@
 
 \documentclass[a4paper,10pt]{article} % Default font size and paper size\usepackage{fullpage}
 
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[UprightFont = * Regular]{Fontin} % Main document font
 \usepackage{fullpage}
 
-\usepackage{url,parskip} % Formatting packages
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+%\usepackage{url,parskip} % Formatting packages
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
 
 \usepackage{hyperref} % Required for adding links	and customizing them
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
@@ -59,6 +66,8 @@
 \begin{document}
 
 \pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
 
 
 %----------------------------------------------------
