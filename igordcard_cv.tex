@@ -40,20 +40,17 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------
 
-\documentclass[a4paper,10pt]{article} % Default font size and paper size\usepackage{fullpage}
+\documentclass[letter,10pt]{article} % Default font size and paper size\usepackage{fullpage}
 
 \usepackage{fontspec} % For loading fonts
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[UprightFont = * Regular]{Fontin} % Main document font
-\usepackage{fullpage}
+\usepackage[top=0.75in, bottom=0.75in, left=1.0in, right=1.0in]{geometry}
 
 \usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
 %\usepackage{url,parskip} % Formatting packages
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
-
-\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
-% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
 
 \usepackage{hyperref} % Required for adding links	and customizing them
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
@@ -76,12 +73,10 @@
 
 \par{\centering{\Huge Igor Duarte \textsc{Cardoso}}\bigskip\par} % Your name
 
-\section{Personal Data}
+\section{Basic Data}
 
 \begin{tabular}{rl}
-\textsc{Birth:} & Portugal, 1990 \\
-\textsc{Location:} & Aveiro, Portugal \\
-\textsc{Alma mater:} & Universidade de Aveiro\\
+\textsc{Degree:} & Master of Science in Computer and Telematics Engineering\\
 \textsc{Email:} & \href{mailto:igordcard+cv@gmail.com}{igordcard@gmail.com}\\
 %\textsc{Web:} & \href{http://igordcard.com}{igordcard.com}\\
 \textsc{GitHub:} & \href{http://github.igordcard.com}{github.igordcard.com}\\
@@ -109,33 +104,31 @@ and core systems, learning and improving day after day. \\
 \section{Education}
 
 \begin{tabular}{rl}	
-\textsc{2014} & Integrated Master's Degree in \textsc{Computer and Telematics Engineering}, \\
+\textsc{2014} & Master of Science in \textsc{Computer and Telematics Engineering}, \\
 &\textbf{Universidade de Aveiro}, Aveiro, Portugal, \\
 & Dissertation: ``Network Infrastructure Control for Virtual Campus'', \\
 & Integrated Master's includes both Bachelor's and Master's degrees: \\
+& Degree with a broad Computer Science foundation and multiple practical projects.\\
 & \textit{Final grade: 16 out of 20.}\\
 &\\
-
-%------------------------------------------------
 
 \textsc{2008} & High School, \\
 &\textbf{Agrupamento de Escolas da Guia}, Guia, Portugal: \\
 & \textit{Final grade: 18 out of 20.}\\
 &\\
-
-%------------------------------------------------
-
 \end{tabular}
 
 %----------------------------------------------------
 %	SCHOLARSHIPS AND ADDITIONAL INFO
 %----------------------------------------------------
 
-\section{Scholarships and Certificates}
+\section{Scholarships and Certificates and Awards}
 
 \begin{tabular}{rl}
 \textsc{2014} & Contribution to the extra-curricular mobile Android app ActUA \normalsize\\
+\textsc{2013} & First place on a University's Mobile App Development challenge awarded by Blip.pt \normalsize\\
 \textsc{2011} & Research Integration Scholarship (12-month) at IEETA, financed by FCT \normalsize\\
+\textsc{2008} & Top High School finalist. \normalsize\\
 \end{tabular} \\
 
 %----------------------------------------------------
@@ -145,12 +138,13 @@ and core systems, learning and improving day after day. \\
 \section{Computer Skills}
 
 \begin{tabular}{rl}
-Basic Experience: & OpenStack, C, C++, ASP.NET, PHP, JavaScript,\\
-& Objective-C/iOS, Ruby, Python, bison, MIPS assembly, x86 assembly\\
+Basic Experience:
+& OpenDaylight, OpenFlow, Ruby, C, C++, ASP.NET, PHP, JavaScript, Objective-C, \\
+& iOS, bison, MIPS assembly, x86 assembly, Dansguardian, Squid3, Jekyll\\
 & \\
-
-Intermediate Experience: & Java, Android, C\#, SQL, bash scripting, git, XHTML, Cisco IOS,\\
-& Excel, UML, GNU/Linux, Vim, Jenkins CI, GlassFish, GNS3, {\LaTeX}\\
+Intermediate Experience:
+& OpenStack, Java, git, Python, bash, Open vSwitch, OpenWrt, Android, C\#, SQL\\
+& HTML, Cisco IOS, GNU/Linux, Vim, {\LaTeX}, Jenkins, GlassFish, GNS3, UML, Excel\\
 \end{tabular} \\
 
 %----------------------------------------------------
@@ -161,16 +155,14 @@ Intermediate Experience: & Java, Android, C\#, SQL, bash scripting, git, XHTML, 
 
 \begin{tabular}{r|p{11cm}}
 	\emph{Current} & Researcher and Software Engineer \\
-	\textsc{October 2014} & Instituto de Telecomunicações \\ 
-	& \footnotesize{Given the experience I acquired on OpenStack during my Master's Dissertation and the related work I did during it, I was invited to stay at Instituto de Telecomunicações, Aveiro, Portugal.}\\
+    \textsc{October 2014} & Instituto de Telecomunicações \\
+    & \footnotesize{Given the experience I acquired on OpenStack during my Master's Dissertation and the related work I did during it, I was invited to stay at Instituto de Telecomunicações doing research related to Network Functions Virtualization (NFV). There, I kept working on OpenStack although initially not upstream. Then started making contributions to the Group-Based Policy project for OpenStack. Most of my work, though, has been around other aspects of NFV: automating configuration of Virtual Network Functions (VNFs), improving and discussing the Traffic Steering implementation to meet the purposes of Service Function Chaining (SFC), testing and integrating other implementation artifacts of the team. }\\
 	\multicolumn{2}{c}{} \\
 	
 	\emph{Current} & Developer, Designer and Marketeer \\
 	\textsc{May 2013} & Wrkout \\ 
 	& \footnotesize{Not really a job, but an amazing work experience. Wrkout is a mobile Android app which I've created. By dealing with multiple aspects related to developing, publishing and monetizing the app by myself, I have learned plenty. This project turned product also teaches me exactly why I should be working in a team.}\\
 	\multicolumn{2}{c}{}\\
-	
-	%------------------------------------------------
 \end{tabular}
 
 %----------------------------------------------------
@@ -180,7 +172,7 @@ Intermediate Experience: & Java, Android, C\#, SQL, bash scripting, git, XHTML, 
 \section{Languages}
 
 \begin{tabular}{rl}
-	\textsc{English:} & Almost Fluent\\
+	\textsc{English:} & Fluent\\
 	
 	\textsc{Portuguese:} & Mothertongue\\
 	
@@ -203,6 +195,33 @@ Technology, Gadgets\\
 Brainstorming\\
 
 %----------------------------------------------------
+%       RESEARCH/PUBLICATIONS
+%----------------------------------------------------
+
+\section{Publications}
+\begin{tabular}{rl}
+\textsc{2015} & Cardoso, I., Barraca, J. P., Goncalves, C., Aguiar, R. L.: \\
+& ``Seamless integration of Cloud and Fog networks''. \\
+& 1st IEEE Conference on Network Softwarization (NetSoft 2015). \normalsize\\
+\textsc{2014} & Paulo Dias, Tiago Sousa, Joao Parracho, Igor Cardoso, Andre Monteiro, Beatriz Sousa Santos: \\
+& ``Student Projects Involving Novel Interaction with Large Displays''. \\
+& IEEE Computer Graphics and Applications, vol. 34, no. 2, pp. 80-86, Mar.-Apr., 2014. \normalsize\\
+\textsc{2014} & Tiago Sousa, Igor Cardoso, João Parracho, Paulo Dias, Beatriz Sousa Santos: \\
+& ``DETI-Interact: Interaction with Large Displays in Public Spaces Using the Kinect''. \\
+& HCI 2014 - 16th International Conference on Human-Computer Interaction: 196-206. \normalsize\\
+\textsc{2012} & Cardoso, I., Dias, P., Sousa Santos, B.: \\
+& ``Interaction with large displays in a public space using the Kinect sensor''. \\
+& 20 Encontro português de Computação Gráfica - EPCG 2012, pp. 81–88 (2012).
+\end{tabular} \\
+
+%----------------------------------------------------
+%	CONTRIBUTIONS
+%----------------------------------------------------
+
+\section{Contributions}
+I have made upstream contributions to the Group-Based Policy project for OpenStack and the OpenStack Operations Guide. I have made other contributions to Open-Source software that are public but not (yet) upstream, including irssi, Yakuake and OpenStack. I have also developed other simple side projects in the past, some of them available at my GitHub. I have also made local contributions in the context of GLUA.
+
+%----------------------------------------------------
 %	PRESENCE
 %
 % This section will deal with both my presence on the web (how to reach me, by professional profiles, etc)
@@ -211,15 +230,12 @@ Brainstorming\\
 
 \section{Presence}
 \begin{tabular}{r|p{11cm}}
-	\emph{ATNoG} & Advanced Telecommunications and Networks Group \\
-	\textsc{September 2013} & \\ 
-	& \footnotesize{I became associated with ATNoG as part of my Master's Thesis. This group is established inside Aveiro's pole of Instituto de Telecomunicações.}\\
-	\multicolumn{2}{c}{} \\
-	\emph{GLUA} & University of Aveiro's Linux Group \\
-	\textsc{July 2011} & \\ 
-	& \footnotesize{Member of the University of Aveiro's Linux Group (Grupo Linux da Universidade de Aveiro). I am no longer active in this group.}\\
-	\multicolumn{2}{c}{}\\
-	%------------------------------------------------
+    \emph{ATNoG} & Advanced Telecommunications and Networks Group \\
+    \textsc{September 2013} & \footnotesize{I became associated with ATNoG as part of my Master's Thesis. This group is established inside Aveiro's pole of Instituto de Telecomunicações.}\\
+    \multicolumn{2}{c}{} \\
+    \emph{GLUA} & University of Aveiro's Linux Group \\
+    \textsc{July 2011} & \footnotesize{Member of the University of Aveiro's Linux Group (Grupo Linux da Universidade de Aveiro).}\\
+    \multicolumn{2}{c}{}\\
 \end{tabular}
 
 %----------------------------------------------------
@@ -228,9 +244,9 @@ Brainstorming\\
 
 \section{Events}
 \begin{tabular}{r|p{11cm}}
-	\emph{As an attendee} & OpenStack Summit 2014, Paris \\
-	\textsc{November 2014} & \\ 
-	%------------------------------------------------
+    \emph{As an attendee and meeting participant} & OpenStack Summit 2015, Vancouver \\
+    \emph{As an attendee} & OpenStack Summit 2014, Paris \\
+    \emph{As different roles} & Other events, conferences and challenges less related. \\
 \end{tabular} \\
 
 \end{document}
