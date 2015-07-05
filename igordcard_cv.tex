@@ -58,6 +58,7 @@
 
 \usepackage{titlesec} % Used to customize the \section command
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titleformat{\subsection}{\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of subsections
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
 
 \begin{document}
@@ -81,7 +82,7 @@
 \textsc{Skype:} & \href{skype:igordcard?add}{igordcard}\\
 \textsc{GitHub:} & \href{http://github.igordcard.com}{github.igordcard.com}\\
 \textsc{LinkedIn:} & \href{http://linkedin.igordcard.com}{linkedin.igordcard.com}\\
-\textsc{Updated:} & 2015-June-30\\
+\textsc{Updated:} & 2015-July-05\\
 \end{tabular} \\
 
 %----------------------------------------------------
@@ -90,10 +91,9 @@
 
 \section{Objectives}
 
-My short-term objectives are currently to keep working on the fields of Network Virtualization and Cloud Computing (IaaS) against projects like OpenStack, as a Software Engineer, preferably doing research.
+My short-term objectives are to keep working on the fields of Cloud Computing (IaaS), Network Virtualization and Network Functions Virtualization against projects like OpenStack, OpenDaylight, Open vSwitch and OPNFV, primarily as a Software Engineer, eventually doing research as well.
 
-I want to take part in the evolution of existing (and development of new) telecommunication technologies 
-and core systems, learning and improving day after day. \\
+I want to take part in the evolution of existing (and development of new) telecommunication technologies and core systems, learning and improving day after day. \\
 
 
 %----------------------------------------------------
@@ -116,6 +116,12 @@ and core systems, learning and improving day after day. \\
 & \textit{Final grade: 18 out of 20.}\\
 &\\
 \end{tabular}
+
+%----------------------------------------------------
+%	MASTERS DISSERTATION
+%----------------------------------------------------
+\subsection{Master's Dissertation}
+On my Master's Dissertation I have designed and developed an extension for OpenStack Neutron that allows virtually any computer network to be extended beyond their physical boundaries up to a Cloud-managed network, per a Cloud tenant's request. This is achieved through an architecture that uses pluggable drivers to communicate with remote devices that directly connect or manage these computer networks, automating all the process of reconfiguring them in order to extend their managed networks' broadcast domains up to the Cloud infrastructure (usually via some form of tunneling). Examples of use cases that can be satisfied or made easier are: a) incrementally migrating legacy computer networks to the cloud; b) achieving the notion of a virtual campus, composed by multiple heterogeneous devices managed by the Cloud tenant or administrator, with virtual services deployed on top; c) on NFV, migrating current physical home gateways to a virtual home gateway environment, without replacing the customer's home gateway itself. Other use cases and in-depth coverage can be read on my publication: ``Seamless integration of Cloud and Fog networks'', referenced at the \nameref{section:publications} section.
 
 %----------------------------------------------------
 %	SCHOLARSHIPS AND ADDITIONAL INFO
@@ -198,6 +204,7 @@ Brainstorming\\
 %----------------------------------------------------
 
 \section{Publications}
+\label{section:publications}
 \begin{tabular}{rl}
 \textsc{2015} & Cardoso, I., Barraca, J. P., Goncalves, C., Aguiar, R. L.: \\
 & ``Seamless integration of Cloud and Fog networks''. \\
@@ -218,7 +225,7 @@ Brainstorming\\
 %----------------------------------------------------
 
 \section{Contributions}
-I have made upstream contributions to the Group-Based Policy project for OpenStack and the OpenStack Operations Guide. I have made other contributions to Open-Source software that are public but not (yet) upstream, including irssi, Yakuake and OpenStack. I have also developed other simple side projects in the past, some of them available at my GitHub. I have also made local contributions in the context of GLUA.
+I have made upstream contributions to the Group-Based Policy project for OpenStack and the OpenStack Operations Guide. I have made other contributions to Open-Source software that are public but not all of them upstream, including irssi, Yakuake and OpenStack. I have also developed other simple side projects in the past, some of them available at my GitHub. I have also made local contributions in the context of GLUA.
 
 %----------------------------------------------------
 %	PRESENCE
