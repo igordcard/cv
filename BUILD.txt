@@ -1,0 +1,8 @@
+Requirements (Ubuntu 18.04):
+
+1. apt install texlive texlive-xetex texstudio
+2. Go to https://www.exljbris.com/fontin.html, download "PC (TTF)" version and extract to ~/.fonts
+3. Open TeXstudio, go to Options->Configure TeXstudio, then Build and set Default Compiler to XeLaTeX
+4. F1 on TeXstudio
+
+20180918
