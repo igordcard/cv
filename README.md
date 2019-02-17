@@ -6,11 +6,11 @@
 
 ## Build
 
-### Ubuntu 16.04/18.04
+### Ubuntu 16.04/18.04/18.10
 
 1. `# apt install texlive texlive-xetex texstudio`
 2. Go to https://www.exljbris.com/fontin.html, download "PC (TTF)" version and extract to `~/.fonts`
 3. Open TeXstudio, go to Options->Configure TeXstudio, then Build and set Default Compiler to XeLaTeX
 4. Press F1 on TeXstudio
 
-20180918
+20190216
