@@ -1,4 +1,4 @@
-# Igor D.C. - Curriculum Vitae
+# Igor DC - Curriculum Vitae
 
 ## Download
 
@@ -11,6 +11,15 @@
 1. `# apt install texlive texlive-xetex texstudio`
 2. Go to https://www.exljbris.com/fontin.html, download "PC (TTF)" version and extract to `~/.fonts`
 3. Open TeXstudio, go to Options->Configure TeXstudio, then Build and set Default Compiler to XeLaTeX
-4. Press F1 on TeXstudio
+4. Press F1 or F5 on TeXstudio
 
-20190216
+### macOS Sonoma
+
+1. Install MacTeX: https://www.tug.org/mactex/
+2. Install TeXstudio: https://www.texstudio.org/
+3. Install fontin: https://www.exljbris.com/fontin.html, download "PC (TTF)" version, extract, open Font Book application and install all TTF fonts. Do not use the "Mac (Type1)" download
+3. Open TeXstudio, go to Options->Configure TeXstudio, then Build and set Default Compiler to XeLaTeX
+5. Press F1 or F5 on TeXstudio
+
+
+20240123
